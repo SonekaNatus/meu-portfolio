@@ -1,61 +1,70 @@
-# Portfólio — Kauã Victor
+# Portfolio — Kauã Victor
 
 <p align="center">
-  <img src="docs/readme-banner.svg" alt="Pré-visualização do portfólio — Kauã Victor, Full Stack Developer" width="100%" />
+  <img src="docs/preview.png" alt="Portfolio preview — Kauã Victor, Full Stack Developer" width="100%" />
 </p>
 
-Site pessoal com apresentação, stack técnica, projetos no GitHub, contato e link para currículo em PDF.
+Personal site with an introduction, tech stack, GitHub projects, contact form, and a PDF resume link.
+
+> **Why PNG?** GitHub often shows SVG images in the README as broken. This repo uses `docs/preview.png` so the banner displays reliably. Vector version: [`docs/readme-banner.svg`](docs/readme-banner.svg). Regenerate the PNG with `powershell -File scripts/gen-preview-png.ps1` after editing the script, or replace `docs/preview.png` with your own screenshot.
 
 ## Stack
 
-| Área | Tecnologias |
-|------|-------------|
+| Area | Technologies |
+|------|--------------|
 | **Frontend** | React 19, TypeScript, Vite 8 |
-| **Estilo** | CSS (variáveis, layout responsivo) |
-| **Outros** | Cursor custom, animações, formulário via `mailto` |
+| **Styling** | CSS (variables, responsive layout) |
+| **Other** | Custom cursor, animations, `mailto` contact form |
 
-## Como rodar localmente
+## Run locally
 
 ```bash
 npm install
 npm run dev
 ```
 
-Abre o endereço que o terminal mostrar (geralmente `http://localhost:5173`).
+Open the URL shown in the terminal (usually `http://localhost:5173`).
 
-### Build de produção
+### Production build
 
 ```bash
 npm run build
 npm run preview
 ```
 
-A pasta `dist/` fica pronta para deploy (Vercel, Netlify, GitHub Pages, etc.).
+The `dist/` folder is ready to deploy (Vercel, Netlify, GitHub Pages, etc.).
 
-## Estrutura principal
+## Project structure
 
 ```
 src/
 ├── components/   # Hero, About, Stack, Projects, Contact, Navbar, Footer, Cursor
 ├── styles/       # global.css, responsive.css
 └── App.tsx
+docs/
+├── preview.png          # README banner (PNG for GitHub)
+└── readme-banner.svg    # same look, vector
 public/
-└── curriculo-kaua-victor.pdf   # currículo (atualiza quando quiseres)
+└── curriculo-kaua-victor.pdf   # resume (replace when you update it)
 ```
 
-## Deploy sugerido
+## Deploy
 
-- [Vercel](https://vercel.com): importa o repositório GitHub; framework preset **Vite**.
+- [Vercel](https://vercel.com): import the GitHub repo; framework preset **Vite**.
 - [Netlify](https://www.netlify.com): build `npm run build`, publish directory `dist`.
-- [GitHub Pages](https://pages.github.com): usar `base` no `vite.config` se o site for em subpath (`/repo-name/`).
+- [GitHub Pages](https://pages.github.com): set `base` in `vite.config` if the site lives under a subpath (`/repo-name/`).
 
-## Autor
+## Author
 
-**Kauã Victor** — ADS, Universidade Senac SP.
+**Kauã Victor** — Systems Analysis & Development, Senac University São Paulo.
 
 - [GitHub](https://github.com/SonekaNatus)
 - [LinkedIn](https://linkedin.com/in/kauã-victor-125a912aa)
 
 ---
 
-<sub>README com banner em SVG para o repositório aparecer bem na página inicial do GitHub. Para uma captura real do site, adiciona `docs/preview.png` e troca a imagem no topo por `![Preview](docs/preview.png)`.</sub>
+### README image not showing on GitHub?
+
+1. Commit and push **`docs/preview.png`** (`git add docs/preview.png && git commit -m "Add README preview" && git push`).
+2. Use the **default branch** name in your remote (usually `main`).
+3. Paths are **case-sensitive** on GitHub (`docs` not `Docs`).
