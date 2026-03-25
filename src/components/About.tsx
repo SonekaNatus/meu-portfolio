@@ -1,10 +1,10 @@
 import React from 'react';
 
 const stats = [
-  { num: '3+', label: 'projetos\nconcluídos' },
-  { num: '4+', label: 'tecnologias\nno stack' },
-  { num: '100%', label: 'comprometido\ncom qualidade' },
-  { num: '∞', label: 'vontade de\naprender' },
+  { num: '3+', label: 'projects\nshipped' },
+  { num: '4+', label: 'stack\ntechnologies' },
+  { num: '100%', label: 'committed\nto quality' },
+  { num: '∞', label: 'drive to\nlearn' },
 ];
 
 const About: React.FC = () => {
@@ -24,7 +24,7 @@ const About: React.FC = () => {
         marginBottom: '1rem',
         display: 'flex', alignItems: 'center', gap: 12,
       }}>
-        01. sobre mim
+        01. about me
         <span style={{ display: 'block', width: 60, height: 1, background: 'var(--accent)', opacity: 0.4 }} />
       </div>
 
@@ -35,16 +35,16 @@ const About: React.FC = () => {
         marginBottom: '3rem',
         lineHeight: 1.1,
       }}>
-        Prazer, sou o Kauã.
+        Hi, I&apos;m Kauã.
       </h2>
 
       <div className="layout-split">
         {/* Texto */}
         <div style={{ display: 'flex', flexDirection: 'column', gap: '1.2rem' }}>
           {[
-            <>Desenvolvedor Full Stack apaixonado por tecnologia, natural de{' '}<span style={{ color: 'var(--accent)' }}>São Paulo</span>. Estudo Análise e Desenvolvimento de Sistemas na{' '}<span style={{ color: 'var(--accent)' }}>Universidade Senac SP</span> e me dedico a construir soluções web completas e bem feitas.</>,
-            <>Trabalho com{' '}<span style={{ color: 'var(--accent)' }}>Java + Spring Boot</span> no backend e{' '}<span style={{ color: 'var(--accent)' }}>React + TypeScript</span> no frontend. Também exploro automações com n8n e integração de APIs REST.</>,
-            <>Estou em busca de uma oportunidade de{' '}<span style={{ color: 'var(--accent)' }}>estágio ou primeiro emprego</span>{' '}onde eu possa contribuir, evoluir e fazer parte de um time incrível.</>,
+            <>I&apos;m a Full Stack developer passionate about technology, based in{' '}<span style={{ color: 'var(--accent)' }}>São Paulo</span>. I study Systems Analysis &amp; Development at{' '}<span style={{ color: 'var(--accent)' }}>Senac University São Paulo</span> and focus on building solid, end-to-end web solutions.</>,
+            <>On the backend I work with{' '}<span style={{ color: 'var(--accent)' }}>Java + Spring Boot</span>; on the frontend with{' '}<span style={{ color: 'var(--accent)' }}>React + TypeScript</span>. I also explore automation with n8n and REST API integrations.</>,
+            <>I&apos;m looking for an{' '}<span style={{ color: 'var(--accent)' }}>internship or first full-time role</span>{' '}where I can contribute, grow, and be part of a great team.</>,
           ].map((text, i) => (
             <p key={i} style={{
               fontFamily: 'var(--font-mono)',
@@ -99,7 +99,7 @@ const About: React.FC = () => {
                 color: 'var(--accent)', display: 'flex', alignItems: 'center', gap: 6,
               }}
             >
-              Currículo PDF ↗
+              Résumé PDF ↗
             </a>
           </div>
         </div>

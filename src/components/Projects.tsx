@@ -15,25 +15,25 @@ const projects: Project[] = [
   {
     num: '01',
     name: 'Doce Encanto Atelier',
-    description: 'Sistema web completo para gestão de doceria.',
-    long: 'Aplicação full stack com catálogo de produtos, sistema de pedidos e painel administrativo. Backend com Spring Boot e MySQL, frontend em Angular.',
+    description: 'Full web system for pastry shop management.',
+    long: 'Full stack app with product catalog, order flow, and admin panel. Spring Boot and MySQL on the backend, Angular on the frontend.',
     tags: ['Angular', 'Spring Boot', 'MySQL', 'Docker', 'REST API'],
     github: 'https://github.com/SonekaNatus/doce-encanto-atelier',
     featured: true,
   },
   {
     num: '02',
-    name: 'Calculadora de Financiamento',
-    description: 'Simulador de financiamento imobiliário em tempo real.',
-    long: 'Calcula parcelas pelas tabelas SAC e PRICE com atualização reativa. Interface limpa construída com React e TypeScript sem dependências externas.',
+    name: 'Mortgage Calculator',
+    description: 'Real-time real estate financing simulator.',
+    long: 'Computes installments using SAC and PRICE amortization with reactive updates. Clean UI built with React and TypeScript and no extra dependencies.',
     tags: ['React', 'TypeScript'],
     github: 'https://github.com/SonekaNatus/calculadora-financiamento',
   },
   {
     num: '03',
-    name: 'Site Mega Pam Planejados',
-    description: 'Landing page institucional com integração WhatsApp.',
-    long: 'Página com seções de apresentação, galeria de ambientes, depoimentos e formulário de contato com envio direto pelo WhatsApp.',
+    name: 'Mega Pam Planejados — Landing',
+    description: 'Institutional landing page with WhatsApp integration.',
+    long: 'Sections for intro, gallery, testimonials, and a contact form that routes messages straight to WhatsApp.',
     tags: ['HTML', 'CSS', 'JavaScript'],
     github: 'https://github.com/SonekaNatus/Site-Mega-Pam-Planejados',
   },
@@ -58,7 +58,7 @@ const Projects: React.FC = () => {
         marginBottom: '1rem',
         display: 'flex', alignItems: 'center', gap: 12,
       }}>
-        03. projetos
+        03. projects
         <span style={{ display: 'block', width: 60, height: 1, background: 'var(--accent)', opacity: 0.4 }} />
       </div>
 
@@ -68,7 +68,7 @@ const Projects: React.FC = () => {
         letterSpacing: '-0.03em',
         marginBottom: 'clamp(2rem, 6vw, 4rem)',
       }}>
-        O que já construí.
+        What I&apos;ve built.
       </h2>
 
       <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
@@ -96,7 +96,7 @@ const Projects: React.FC = () => {
                 border: '1px solid var(--accent)',
                 padding: '2px 10px', borderRadius: 20,
               }}>
-                destaque
+                featured
               </div>
             )}
 
@@ -167,7 +167,7 @@ const Projects: React.FC = () => {
                       whiteSpace: 'nowrap',
                     }}
                   >
-                    demo ao vivo ↗
+                    live demo ↗
                   </a>
                 )}
               </div>
@@ -193,7 +193,7 @@ const Projects: React.FC = () => {
           onMouseEnter={e => (e.currentTarget.style.color = 'var(--accent)')}
           onMouseLeave={e => (e.currentTarget.style.color = 'var(--muted)')}
         >
-          ver todos os repositórios no GitHub ↗
+          see all repositories on GitHub ↗
         </a>
       </div>
     </section>

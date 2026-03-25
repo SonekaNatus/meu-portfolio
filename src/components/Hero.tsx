@@ -4,7 +4,7 @@ const roles = [
   'Full Stack Developer',
   'Java + Spring Boot',
   'React + TypeScript',
-  'Automação com n8n',
+  'Automation with n8n',
 ];
 
 const Hero: React.FC = () => {
@@ -63,7 +63,7 @@ const Hero: React.FC = () => {
           animation: 'fadeUp 0.6s 0.2s both',
         }}>
           <span style={{ display: 'block', width: 40, height: 1, background: 'var(--accent)' }} />
-          disponível para oportunidades
+          open to opportunities
         </div>
 
         {/* Name */}
@@ -107,10 +107,10 @@ const Hero: React.FC = () => {
           marginBottom: '3rem',
           animation: 'fadeUp 0.6s 0.65s both',
         }}>
-          Desenvolvedor Full Stack estudante de ADS na{' '}
-          <span style={{ color: 'var(--accent)' }}>Universidade Senac SP</span>.
-          Construo soluções web completas — do backend com Java e Spring Boot
-          ao frontend com React e TypeScript.
+          Full Stack developer and Systems Analysis student at{' '}
+          <span style={{ color: 'var(--accent)' }}>Senac University São Paulo</span>.
+          I build end-to-end web solutions — from Java and Spring Boot on the backend
+          to React and TypeScript on the frontend.
         </p>
 
         {/* Actions */}
@@ -135,7 +135,7 @@ const Hero: React.FC = () => {
             onMouseEnter={e => (e.currentTarget.style.transform = 'translateY(-2px)')}
             onMouseLeave={e => (e.currentTarget.style.transform = 'translateY(0)')}
           >
-            ver projetos →
+            view projects →
           </a>
           <a
             href="#contact"
@@ -161,7 +161,7 @@ const Hero: React.FC = () => {
               e.currentTarget.style.transform = 'translateY(0)';
             }}
           >
-            entrar em contato
+            get in touch
           </a>
           <a
             href="/curriculo-kaua-victor.pdf"
@@ -189,7 +189,7 @@ const Hero: React.FC = () => {
               e.currentTarget.style.transform = 'translateY(0)';
             }}
           >
-            currículo PDF ↗
+            résumé PDF ↗
           </a>
         </div>
       </div>

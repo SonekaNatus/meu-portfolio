@@ -6,13 +6,13 @@ const Footer: React.FC = () => (
       fontFamily: 'var(--font-mono)', fontSize: '0.75rem',
       color: 'var(--muted)',
     }}>
-      © 2025 Kauã Victor — feito com dedicação
+      © 2025 Kauã Victor — built with care
     </span>
     <div className="site-footer__links" style={{ display: 'flex' }}>
       {[
         { label: 'GitHub',    href: 'https://github.com/SonekaNatus' },
         { label: 'LinkedIn',  href: 'https://linkedin.com/in/kauã-victor-125a912aa' },
-        { label: 'Currículo', href: '/curriculo-kaua-victor.pdf' },
+        { label: 'Résumé', href: '/curriculo-kaua-victor.pdf' },
         { label: 'WhatsApp',  href: 'https://wa.me/5511979722730' },
         { label: 'Instagram', href: 'https://instagram.com/kauavictor_7xz' },
       ].map(({ label, href }) => (

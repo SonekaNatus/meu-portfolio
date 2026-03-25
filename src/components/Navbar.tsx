@@ -5,10 +5,10 @@ interface NavbarProps {
 }
 
 const links = [
-  { label: 'sobre', href: '#about', num: '01' },
+  { label: 'about', href: '#about', num: '01' },
   { label: 'stack', href: '#stack', num: '02' },
-  { label: 'projetos', href: '#projects', num: '03' },
-  { label: 'contato', href: '#contact', num: '04' },
+  { label: 'projects', href: '#projects', num: '03' },
+  { label: 'contact', href: '#contact', num: '04' },
 ];
 
 const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
@@ -101,14 +101,14 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
           rel="noreferrer"
           onClick={closeMenu}
         >
-          currículo ↗
+          résumé ↗
         </a>
         <button
           type="button"
           className="site-nav__menu-btn"
           aria-expanded={menuOpen}
           aria-controls="site-nav-menu"
-          aria-label={menuOpen ? 'Fechar menu' : 'Abrir menu'}
+          aria-label={menuOpen ? 'Close menu' : 'Open menu'}
           onClick={() => setMenuOpen((o) => !o)}
         >
           <span className="site-nav__menu-bars">

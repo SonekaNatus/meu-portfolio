@@ -12,8 +12,8 @@ const Contact: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const subject = encodeURIComponent(`Contato de ${form.name} via portfólio`);
-    const body = encodeURIComponent(`Nome: ${form.name}\nEmail: ${form.email}\n\n${form.message}`);
+    const subject = encodeURIComponent(`Portfolio contact from ${form.name}`);
+    const body = encodeURIComponent(`Name: ${form.name}\nEmail: ${form.email}\n\n${form.message}`);
     window.open(`mailto:${TO_EMAIL}?subject=${subject}&body=${body}`);
     setSent(true);
     setTimeout(() => setSent(false), 4000);
@@ -50,7 +50,7 @@ const Contact: React.FC = () => {
           marginBottom: '1rem',
           display: 'flex', alignItems: 'center', gap: 12,
         }}>
-          04. contato
+          04. contact
           <span style={{ display: 'block', width: 60, height: 1, background: 'var(--accent)', opacity: 0.4 }} />
         </div>
 
@@ -60,7 +60,7 @@ const Contact: React.FC = () => {
           letterSpacing: '-0.03em',
           marginBottom: '1rem',
         }}>
-          Vamos trabalhar juntos?
+          Let&apos;s work together?
         </h2>
 
         <p style={{
@@ -69,8 +69,8 @@ const Contact: React.FC = () => {
           lineHeight: 1.8, marginBottom: 'clamp(2rem, 6vw, 4rem)',
           maxWidth: 500,
         }}>
-          Estou aberto a oportunidades de estágio, trabalho ou colaboração.
-          Me manda uma mensagem — responderei em breve!
+          I&apos;m open to internships, full-time roles, or collaboration.
+          Send me a message — I&apos;ll get back to you soon!
         </p>
 
         <div className="contact-split">
@@ -81,14 +81,14 @@ const Contact: React.FC = () => {
                 color: 'var(--muted)', letterSpacing: '0.1em',
                 display: 'block', marginBottom: '0.4rem',
               }}>
-                nome
+                name
               </label>
               <input
                 name="name"
                 value={form.name}
                 onChange={handleChange}
                 required
-                placeholder="Seu nome"
+                placeholder="Your name"
                 style={inputStyle}
                 onFocus={e => (e.target.style.borderColor = 'var(--accent)')}
                 onBlur={e => (e.target.style.borderColor = 'var(--border)')}
@@ -109,7 +109,7 @@ const Contact: React.FC = () => {
                 value={form.email}
                 onChange={handleChange}
                 required
-                placeholder="seu@email.com"
+                placeholder="you@email.com"
                 style={inputStyle}
                 onFocus={e => (e.target.style.borderColor = 'var(--accent)')}
                 onBlur={e => (e.target.style.borderColor = 'var(--border)')}
@@ -122,7 +122,7 @@ const Contact: React.FC = () => {
                 color: 'var(--muted)', letterSpacing: '0.1em',
                 display: 'block', marginBottom: '0.4rem',
               }}>
-                mensagem
+                message
               </label>
               <textarea
                 name="message"
@@ -130,7 +130,7 @@ const Contact: React.FC = () => {
                 onChange={handleChange}
                 required
                 rows={5}
-                placeholder="Olá Kauã, gostaria de conversar sobre..."
+                placeholder="Hi Kauã, I&apos;d like to talk about..."
                 style={{ ...inputStyle, resize: 'vertical' }}
                 onFocus={e => (e.target.style.borderColor = 'var(--accent)')}
                 onBlur={e => (e.target.style.borderColor = 'var(--border)')}
@@ -154,7 +154,7 @@ const Contact: React.FC = () => {
               onMouseEnter={e => (e.currentTarget.style.transform = 'translateY(-2px)')}
               onMouseLeave={e => (e.currentTarget.style.transform = 'translateY(0)')}
             >
-              {sent ? '✓ mensagem enviada!' : 'enviar mensagem →'}
+              {sent ? '✓ message sent!' : 'send message →'}
             </button>
           </form>
 

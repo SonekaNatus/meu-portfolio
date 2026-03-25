@@ -2,6 +2,7 @@
   "name": "meu-portfolio",
   "private": true,
   "version": "0.0.0",
+  "description": "Personal portfolio — React, TypeScript, Vite. Full Stack developer.",
   "type": "module",
   "scripts": {
     "dev": "vite",

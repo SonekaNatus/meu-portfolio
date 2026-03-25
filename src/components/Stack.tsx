@@ -32,7 +32,7 @@ const categories: Category[] = [
     ],
   },
   {
-    label: 'devops & ferramentas',
+    label: 'devops & tools',
     techs: [
       { name: 'Docker',   color: '#2496ED' },
       { name: 'Git',      color: '#F05032' },
@@ -65,7 +65,7 @@ const Stack: React.FC = () => {
           marginBottom: '1rem',
           display: 'flex', alignItems: 'center', gap: 12,
         }}>
-          02. stack técnica
+          02. tech stack
           <span style={{ display: 'block', width: 60, height: 1, background: 'var(--accent)', opacity: 0.4 }} />
         </div>
 
@@ -75,7 +75,7 @@ const Stack: React.FC = () => {
           letterSpacing: '-0.03em',
           marginBottom: 'clamp(2rem, 6vw, 4rem)',
         }}>
-          Tecnologias que uso.
+          Technologies I use.
         </h2>
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: '3rem' }}>

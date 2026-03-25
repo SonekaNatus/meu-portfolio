@@ -1,4 +1,4 @@
-/* Layout: uma coluna no telemóvel, duas no desktop */
+/* Layout: one column on mobile, two on desktop */
 .layout-split {
   display: grid;
   grid-template-columns: 1fr;
@@ -242,7 +242,7 @@
   }
 }
 
-/* Hero: glow menor no telemóvel */
+/* Hero: smaller glow on mobile */
 .hero-glow {
   width: min(400px, 90vw);
   height: min(400px, 90vw);
