@@ -18,7 +18,8 @@ $brushMuted = New-Object System.Drawing.SolidBrush ([System.Drawing.Color]::From
 $brushText = New-Object System.Drawing.SolidBrush ([System.Drawing.Color]::FromArgb(255, 230, 237, 243))
 $brushAcc = New-Object System.Drawing.SolidBrush $accent
 $g.DrawString('PORTFOLIO', $fontMono, $brushMuted, 80, 125)
-$g.DrawString('Kauã Victor', $fontTitle, $brushText, 80, 195)
+$name = 'Kau{0} Victor' -f [char]0x00E3
+$g.DrawString($name, $fontTitle, $brushText, 80, 195)
 $g.DrawString('Full Stack · Java · Spring · React · TypeScript', $fontSub, $brushAcc, 80, 275)
 $g.DrawString('React + Vite + TypeScript', $fontMono, $brushMuted, 80, 315)
 $projRoot = Resolve-Path (Join-Path $PSScriptRoot '..')

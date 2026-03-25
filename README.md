@@ -6,8 +6,6 @@
 
 Personal site with an introduction, tech stack, GitHub projects, contact form, and a PDF resume link.
 
-> **Why PNG?** GitHub often shows SVG images in the README as broken. This repo uses `docs/preview.png` so the banner displays reliably. Vector version: [`docs/readme-banner.svg`](docs/readme-banner.svg). Regenerate the PNG with `powershell -File scripts/gen-preview-png.ps1` after editing the script, or replace `docs/preview.png` with your own screenshot.
-
 ## Stack
 
 | Area | Technologies |
@@ -42,8 +40,8 @@ src/
 ├── styles/       # global.css, responsive.css
 └── App.tsx
 docs/
-├── preview.png          # README banner (PNG for GitHub)
-└── readme-banner.svg    # same look, vector
+├── preview.png          # README banner (replace with your own screenshot anytime)
+└── readme-banner.svg
 public/
 └── curriculo-kaua-victor.pdf   # resume (replace when you update it)
 ```
@@ -61,10 +59,3 @@ public/
 - [GitHub](https://github.com/SonekaNatus)
 - [LinkedIn](https://linkedin.com/in/kauã-victor-125a912aa)
 
----
-
-### README image not showing on GitHub?
-
-1. Commit and push **`docs/preview.png`** (`git add docs/preview.png && git commit -m "Add README preview" && git push`).
-2. Use the **default branch** name in your remote (usually `main`).
-3. Paths are **case-sensitive** on GitHub (`docs` not `Docs`).
